@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y \
 
 # ---- workspace ----
 WORKDIR /catkin_ws
-COPY catkin_ws /catkin_ws
+COPY src /catkin_ws/src
 
 # ---- build ----
 RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && catkin_make"

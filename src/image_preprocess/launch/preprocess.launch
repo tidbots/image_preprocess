@@ -5,7 +5,7 @@
         name="image_preprocess"
         output="screen">
 
-    <param name="input_topic"  value="/camera/image_raw"/>
+    <param name="input_topic"  value="/usb_cam/image_raw"/>
     <param name="output_topic" value="/camera/image_preprocessed"/>
 
     <!-- brightness thresholds -->
