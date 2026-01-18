@@ -1,1 +1,21 @@
-#
+services:
+  preprocess:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: vision_preprocess
+    network_mode: host
+    ipc: host
+    privileged: true
+
+    environment:
+      - ROS_MASTER_URI=http://localhost:11311
+      - ROS_IP=127.0.0.1
+
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /dev:/dev
+
+    command: >
+      roslaunch image_preprocess preprocess.launch
+
