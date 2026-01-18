@@ -29,5 +29,8 @@ RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && catkin_make"
 COPY docker/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
+ENV ROS_PACKAGE_PATH=/catkin_ws/src:${ROS_PACKAGE_PATH}
+ENV YOLO_CONFIG_DIR=/tmp/Ultralytics
+
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["bash"]
