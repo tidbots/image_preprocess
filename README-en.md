@@ -1,4 +1,4 @@
-# image_preprocess
+# image-preprocess
 
 A preprocessing ROS node for adapting to lighting changes
 
@@ -31,8 +31,8 @@ A preprocessing ROS node for adapting to lighting changes
 
 ```bash
 # Clone repository
-git clone git@github.com:tidbots/image_preprocess.git
-cd image_preprocess
+git clone git@github.com:tidbots/image-preprocess.git
+cd image-preprocess
 
 # Build Docker image
 docker compose build
@@ -246,7 +246,7 @@ Calculated for each frame (with EMA smoothing):
 ## Project Structure
 
 ```
-image_preprocess/
+image-preprocess/
 ├── README.md             # Japanese version
 ├── README-en.md          # English version
 ├── LICENSE               # Apache 2.0

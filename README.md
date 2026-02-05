@@ -1,4 +1,4 @@
-# image_preprocess
+# image-preprocess
 
 照明の変化に対応するための前処理ROSノード
 
@@ -31,8 +31,8 @@
 
 ```bash
 # リポジトリをクローン
-git clone git@github.com:tidbots/image_preprocess.git
-cd image_preprocess
+git clone git@github.com:tidbots/image-preprocess.git
+cd image-preprocess
 
 # Dockerイメージをビルド
 docker compose build
@@ -246,7 +246,7 @@ clahe_clip: 2.5
 ## プロジェクト構成
 
 ```
-image_preprocess/
+image-preprocess/
 ├── README.md
 ├── README-en.md          # English version
 ├── LICENSE               # Apache 2.0
